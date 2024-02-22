@@ -7,9 +7,10 @@ def map_value(input_value, in_min, in_max, out_min, out_max):
     return int((input_value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min)
 
 
-data = "[24.12.2020 10:53:18] CO       2000ppm  SO2       500ppm  NO       1000ppm  -----0       ---- -----0       ---- -----0       ---- O2      21.95%Vol NO2        10ppm  -----0       ---- -----0       ---- "
+data = "[24.12.2020 10:53:18] CO       1000ppm  SO2       300ppm  NO       1100ppm  -----0       ---- -----0       ---- -----0       ---- O2      21.95%Vol NO2        10ppm  -----0       ---- -----0       ---- "
 
 ser = Serial('COM3', 115200, timeout=5)
+# ser_232 = Serial('COM4', 115200, timeout=11)
 
 while True:
 # for data in datas:
